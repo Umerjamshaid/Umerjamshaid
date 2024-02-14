@@ -1,34 +1,57 @@
-# Number Guessing Game
+<!-- Banner -->
+![Banner](link-to-your-banner)
 
-## Problem Statement
+# 👋 Hello World! I'm [Your Name]
 
-Create a simple Number Guessing Game in Python.
+### 👨‍💻 About Me
 
-## Code Structure
+- 🔭 I’m currently working on [Project Name]
+- 🌱 I’m currently learning [Technology/Tool]
+- 💬 Ask me about [Topic]
+- 📫 How to reach me: [Email](mailto:youremail@example.com) | [LinkedIn](link-to-linkedin) | [Twitter](link-to-twitter)
 
-The Python script `Number_Guessing_Game.py` contains a function `start_game` that initiates the Number Guessing Game. The game generates a random number between 1 and 100, and the user is prompted to guess the correct number. The script provides feedback on whether the guess is too low or too high and congratulates the user upon a correct guess.
+### 🚀 Technologies & Tools
 
-## How to Run
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-1. Ensure you have Python installed on your machine.
-2. Open a terminal or command prompt.
-3. Navigate to the directory containing `Number_Guessing_Game.py`.
-4. Run the script using the command: `python Number_Guessing_Game.py`.
+### 📊 GitHub Stats
 
-## Example Output
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
 
-Welcome to the Number Guessing Game!
-I'm thinking of a number between 1 and 100. Can you guess it?
+### 🌟 Featured Repositories
 
-Enter your guess: 50
-Too low. Try again.
+- [Repo 1](link-to-repo) - Description of Repo 1
+- [Repo 2](link-to-repo) - Description of Repo 2
+- [Repo 3](link-to-repo) - Description of Repo 3
 
-Enter your guess: 75
-Too high. Try again.
+### 🎥 Check Out My Latest YouTube Video
 
-Enter your guess: 60
-Congratulations! You guessed the correct number 60 in 3 attempts.
+[![YouTube Video](link-to-youtube-thumbnail)](link-to-youtube-video)
 
+### 💻 Recent Blog Posts
 
-Feel free to modify the code as need for your requirements.
+- [Blog Post 1](link-to-blog-post)
+- [Blog Post 2](link-to-blog-post)
 
+### 📅 GitHub Activity
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=yourusername&bg_color=ffffff&color=000000&line=4C71F2&point=5DA3FA&hide_border=true)
+
+### 🎨 Portfolio
+
+Check out my portfolio website [here](link-to-portfolio) for more projects and information!
+
+### 📫 Let's Connect
+
+Feel free to reach out to me on [LinkedIn](link-to-linkedin) or [Twitter](link-to-twitter). I'm always open to collaborations and discussions!
+
+<!-- Footer -->
+<p align="center">
+  <img src="link-to-gif" alt="Animated Gif" width="500"/>
+</p>
