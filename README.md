@@ -94,7 +94,7 @@ I'm a passionate software developer with a love for building innovative solution
 Feel free to explore my projects and repositories below! ⬇️
 
  
+<a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Sendwich&emoji=🌮&slug=UmerJamshaid&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
-
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/UmerJamshaid"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/UmerJamshaid" /></a></p><br><br>
+<!---<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/UmerJamshaid"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/UmerJamshaid" /></a></p><br><be>---->
