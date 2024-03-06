@@ -95,7 +95,15 @@ I'm a passionate software developer with a love for building innovative solution
        <a href="https://medium.com/@yourusername" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="Medium" height="30" width="40" /></a>
 </p>
   
-[[https://spotify-github-profile.vercel.app/api/view.svg?uid=31pl5ssut74ztcq34xlqobqsrb7i&redirect=true][https://spotify-github-profile.vercel.app/api/view.svg?uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=true&background_color=000000&interchange=true&bar_color=3151af)]]
+<br/>  
+
+<div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=368791" /></div>  
+
+<br/>  
+
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=rishavanand&&style=flat-square" align="center" />
+</div>  
 
  
 <a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Sendwich&emoji=🌮&slug=UmerJamshaid&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
