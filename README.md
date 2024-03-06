@@ -95,7 +95,7 @@ I'm a passionate software developer with a love for building innovative solution
        <a href="https://medium.com/@yourusername" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="Medium" height="30" width="40" /></a>
 </p>
   
-Feel free to explore my projects and repositories below! ⬇️
+[[https://spotify-github-profile.vercel.app/api/view.svg?uid=31pl5ssut74ztcq34xlqobqsrb7i&redirect=true][https://spotify-github-profile.vercel.app/api/view.svg?uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=true&background_color=000000&interchange=true&bar_color=3151af)]]
 
  
 <a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Sendwich&emoji=🌮&slug=UmerJamshaid&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
