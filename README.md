@@ -1,3 +1,5 @@
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 # Hello, I'm UMERJAMSHAID! 👋
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Roboto&color=1E90FF&size=24&center=true&vCenter=true&width=500&height=50&lines=Welcome+to+my+GitHub+profile!;Let's+code+something+amazing!)](https://git.io/typing-svg)
