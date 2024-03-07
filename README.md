@@ -1,4 +1,4 @@
-![]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/Umerjamshaid/Umerjamshaid/blob/main/Readme-stuff/Top%2010%20Programming%20Languages%20Used%20By%20GitHub%20Repo%20Contributors%20In%202021.jpg))
+![]()
 
 # Hello, I'm UMERJAMSHAID! 👋
 
