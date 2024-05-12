@@ -23,18 +23,34 @@ I'm a passionate software developer with a love for building innovative solution
 
 ## Skills
 ### Frontend
-- Programming Languages: HTML, CSS, JavaScript
-- Frameworks/Libraries: Bootstrap
-- Tools & Technologies: Adobe Illustrator, Adobe XD, Blender, Figma
+- Programming Languages: 
+  ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
+  ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
+- Frameworks/Libraries: 
+  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white&style=for-the-badge)
+- Tools & Technologies: 
+  ![Adobe Illustrator](https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?logo=adobeillustrator&logoColor=white&style=for-the-badge)
+  ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-FF61F6?logo=adobexd&logoColor=white&style=for-the-badge)
+  ![Blender](https://img.shields.io/badge/Blender-F5792A?logo=blender&logoColor=white&style=for-the-badge)
+  ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)
 
 ### Backend
-- Programming Languages: PHP, Python
-- Frameworks/Libraries: Flask
-- Tools & Technologies: WordPress
+- Programming Languages: 
+  ![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
+  ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+- Frameworks/Libraries: 
+  ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=for-the-badge)
+- Tools & Technologies: 
+  ![WordPress](https://img.shields.io/badge/WordPress-21759B?logo=wordpress&logoColor=white&style=for-the-badge)
 
 ### DevOps
-- Tools: XAMPP, Firebase
-- Version Control: Git
+- Tools: 
+  ![XAMPP](https://img.shields.io/badge/XAMPP-F37623?logo=xampp&logoColor=white&style=for-the-badge)
+  ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=for-the-badge)
+- Version Control: 
+  ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
+
 
 ## GitHub Stats
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=UMERJAMSHAID&show_icons=true&theme=dark)
