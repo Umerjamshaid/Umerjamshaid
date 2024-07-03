@@ -85,7 +85,7 @@ I'm a passionate software developer with a love for building innovative solution
 </p>
 
 <div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=368791" alt="Spotify Now Playing" />
+  <img src="https://spotify-github-profile.vercel.app/api/view? uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=368791" alt="Spotify Now Playing" />
 </div>
 
 <div align="center">
