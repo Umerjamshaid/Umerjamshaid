@@ -88,6 +88,11 @@ I'm a passionate software developer with a love for building innovative solution
   <img src="https://spotify-github-profile.vercel.app/api/view? uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=368791" alt="Spotify Now Playing" />
 </div>
 
+### Spotify Now Playing
+
+[![Spotify](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31pp35u7iyrpbyeugtthvchqvfz4&redirect=true)](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=2f322f&bar_color_cover=true)
+
+
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=UMERJAMSHAID&style=flat-square" alt="Profile Views" />
 </div>
