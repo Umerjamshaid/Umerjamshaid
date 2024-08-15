@@ -84,13 +84,33 @@ I'm a passionate software developer with a love for building innovative solution
   <a href="https://medium.com/@fusheng113" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="Medium" height="30" width="40" /></a>
 </p>
 
+<br/>  
+
+<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=2f322f&bar_color_cover=false" align="center" style="width: 100%" />  
+
+<br/>  
+
 <div align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view? uid=31pl5ssut74ztcq34xlqobqsrb7i&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=368791" alt="Spotify Now Playing" />
-</div>
+<img src="https://komarev.com/ghpvc/?username=rishavanand&&style=flat-square" align="center" />
+</div>  
+  
 
-### Spotify Now Playing
+<br/>  
 
-[![Spotify](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31pp35u7iyrpbyeugtthvchqvfz4&redirect=true)](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=2f322f&bar_color_cover=true)
+<div align="center">
+            <a href="https://www.buymeacoffee.com/rishavanand" target="_blank" style="display: inline-block;">
+                <img
+                    src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square&logo=buymeacoffee" 
+                    align="center"
+                />
+            </a></div>
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
+
+
+
 
 
 <div align="center">
