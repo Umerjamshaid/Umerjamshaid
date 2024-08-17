@@ -77,3 +77,10 @@ I'm a passionate software developer with a love for building innovative solution
 <br />
 
 ----
+
+
+<div align="center">
+ <!--- <img src="https://komarev.com/ghpvc/?username=UMERJAMSHAID&style=flat-square" alt="Profile Views" />--->
+</div>
+
+<a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Sandwich&emoji=🌮&slug=UmerJamshaid&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" /></a>
