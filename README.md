@@ -84,3 +84,21 @@ I'm a passionate software developer with a love for building innovative solution
 </div>
 
 <a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Sandwich&emoji=🌮&slug=UmerJamshaid&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" /></a>
+
+
+
+## 📊 3D Contribution Graph
+![3D Contribution](https://github-profile-3d-contrib.vercel.app/api/svg?username=Umerjamshaid&theme=dark)
+
+## 📈 Activity Graph
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&theme=react-dark&hide_border=true&area=true)
+
+## 🏆 GitHub Trophies
+![Trophies](https://github-profile-trophy.vercel.app/?username=Umerjamshaid&theme=darkhub&no-frame=true&row=1&column=7)
+
+## 📊 Profile Summary Cards
+![Profile Details](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Umerjamshaid&theme=dracula)
+
+![Repos Per Language](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Umerjamshaid&theme=dracula) ![Most Commit Language](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Umerjamshaid&theme=dracula)
+
+![Stats](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Umerjamshaid&theme=dracula) ![Productive Time](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Umerjamshaid&theme=dracula&utcOffset=5)
