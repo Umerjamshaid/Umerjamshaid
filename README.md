@@ -24,21 +24,25 @@ I'm a passionate software developer with a love for building innovative solution
 
 - Other Skills: JavaScript, Python, Bootstrap, HTML/CSS, PHP, Flask
 
-## Languages and Tools
+## 💻 Tech Stack
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/wordpress/21759B" height="30" alt="wordpress logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/bootstrap/7952B3" height="30" alt="bootstrap logo"  />
-</div>
+### Languages
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
+### Frameworks & Tools
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+### Learning
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+---
 
 ## Connect with Me
 <p align="left">
@@ -56,7 +60,8 @@ I'm a passionate software developer with a love for building innovative solution
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Umerjamshaid&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=radical&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
-## 🐍 Snake Game
+## 🐍 Contribution Snake
+
 ![Snake animation](https://github.com/Umerjamshaid/Umerjamshaid/blob/output/snake.svg)
 
 <div align="center">
@@ -87,14 +92,11 @@ I'm a passionate software developer with a love for building innovative solution
 
 
 
-## 📊 3D Contribution Graph
-[![GitHub Skyline](https://skyline.github.com/Umerjamshaid/2024)](https://skyline.github.com/Umerjamshaid/2024)
+
 
 ## 📈 Activity Graph
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&theme=react-dark&hide_border=true&area=true)
 
-## 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=Umerjamshaid&theme=radical&column=7)
 
 ## 📊 Profile Summary Cards
 ![Profile Details](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Umerjamshaid&theme=dracula)
