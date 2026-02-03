@@ -88,13 +88,13 @@ I'm a passionate software developer with a love for building innovative solution
 
 
 ## 📊 3D Contribution Graph
-![3D Contribution](https://raw.githubusercontent.com/Umerjamshaid/Umerjamshaid/main/profile-3d-contrib/profile-night-rainbow.svg)
+[![GitHub Skyline](https://skyline.github.com/Umerjamshaid/2024)](https://skyline.github.com/Umerjamshaid/2024)
 
 ## 📈 Activity Graph
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&theme=react-dark&hide_border=true&area=true)
 
 ## 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=Umerjamshaid&theme=darkhub&no-frame=true&row=1&column=7)
+![Trophies](https://github-profile-trophy.vercel.app/?username=Umerjamshaid&theme=radical&column=7)
 
 ## 📊 Profile Summary Cards
 ![Profile Details](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Umerjamshaid&theme=dracula)
