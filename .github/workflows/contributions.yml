@@ -3,6 +3,7 @@ name: Daily Contributions
 on:
   schedule:
     - cron: '0 0 * * 1-5'   # Runs at midnight UTC, Monday–Friday
+  workflow_dispatch:         # Allows manual trigger from the Actions tab
 
 jobs:
   make-contribution:
@@ -11,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0      # Full history for proper rebasing
+          fetch-depth: 0
 
       - name: Make daily contribution
         run: |
@@ -25,7 +26,7 @@ jobs:
           commit-message: "Daily contribution"
           title: "Daily Contribution"
           body: "This pull request was created automatically by a GitHub Actions workflow to make a daily contribution."
-          branch: daily-contribution   # Branch to push changes to
-          base: main                    # Target branch for the PR
-          add-paths: README.md          # Only stage the changed file
-          delete-branch: true            # Delete branch after PR is merged (optional)
+          branch: daily-contribution
+          base: main
+          add-paths: README.md
+          delete-branch: true
