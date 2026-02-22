@@ -2,7 +2,7 @@ name: Daily Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'
+    - cron: '0 0 * * 1-5'   # Runs at midnight UTC, Monday–Friday
 
 jobs:
   make-contribution:
@@ -11,29 +11,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0      # Full history for proper rebasing
+
       - name: Make daily contribution
         run: |
           echo "Making daily contribution"
           echo "$(date)" >> README.md
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v7
+
+      - name: Create or update pull request
+        uses: peter-evans/create-pull-request@v5
         with:
-          author_name: "GitHub Actions"
-          author_email: "actions@github.com"
-          message: "Daily contribution"
-          add: "README.md"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: daily-contribution
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Open pull request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          title: "Daily Contribution"
-          commit-message: "Daily contribution"
-          branch: daily-contribution
-          base: main
-          body: "This pull request was created automatically by a GitHub Actions workflow to make a daily contribution."
           token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Daily contribution"
+          title: "Daily Contribution"
+          body: "This pull request was created automatically by a GitHub Actions workflow to make a daily contribution."
+          branch: daily-contribution   # Branch to push changes to
+          base: main                    # Target branch for the PR
+          add-paths: README.md          # Only stage the changed file
+          delete-branch: true            # Delete branch after PR is merged (optional)
