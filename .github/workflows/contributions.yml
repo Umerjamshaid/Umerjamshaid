@@ -2,15 +2,20 @@ name: Daily Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'   # Runs at midnight UTC, Monday–Friday
-  workflow_dispatch:         # Allows manual trigger from the Actions tab
+    - cron: '0 0 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   make-contribution:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -19,14 +24,23 @@ jobs:
           echo "Making daily contribution"
           echo "$(date)" >> README.md
 
-      - name: Create or update pull request
+      - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Daily contribution"
           title: "Daily Contribution"
-          body: "This pull request was created automatically by a GitHub Actions workflow to make a daily contribution."
+          body: "Automated daily contribution."
           branch: daily-contribution
           base: main
           add-paths: README.md
           delete-branch: true
+
+      - name: Enable Auto Merge
+        if: steps.cpr.outputs.pull-request-number
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
