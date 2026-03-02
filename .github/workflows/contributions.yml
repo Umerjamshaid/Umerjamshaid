@@ -11,36 +11,19 @@ jobs:
 
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Make daily contribution
         run: |
-          echo "Making daily contribution"
-          echo "$(date)" >> README.md
+          echo "* $(date)" >> CONTRIBUTIONS.md
 
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Daily contribution"
-          title: "Daily Contribution"
-          body: "Automated daily contribution."
-          branch: daily-contribution
-          base: main
-          add-paths: README.md
-          delete-branch: true
-
-      - name: Enable Auto Merge
-        if: steps.cpr.outputs.pull-request-number
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CONTRIBUTIONS.md
+          git commit -m "chore: daily activity log $(date +'%Y-%m-%d')"
+          git push

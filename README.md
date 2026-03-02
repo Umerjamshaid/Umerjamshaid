@@ -62,7 +62,7 @@ I'm a passionate software developer with a love for building innovative solution
 
 ## 🐍 Contribution Snake
 
-![Snake animation](https://github.com/Umerjamshaid/Umerjamshaid/blob/output/snake.svg)
+![Snake animation](https://github.com/Umerjamshaid/Umerjamshaid/blob/output/github-contribution-grid-snake.svg)
 
 -----
 <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=2f322f&bar_color_cover=false" align="center" style="width: 100%" />  
