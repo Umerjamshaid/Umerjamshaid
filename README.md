@@ -64,17 +64,10 @@ I'm a passionate software developer with a love for building innovative solution
 
 ![Snake animation](https://github.com/Umerjamshaid/Umerjamshaid/blob/output/snake.svg)
 
-<div align="center">
-  <img src="https://github-read-medium-git-main.pahlevikun.vercel.app/latest?limit=4&username=@Fusheng&theme=dark" alt="Layout with last medium posts"  />
-</div>
 -----
 <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=2f322f&bar_color_cover=false" align="center" style="width: 100%" />  
 
 <br/>  
-
-<div align="center">
-<img src="https://komarev.com/ghpvc/?username=rishavanand&&style=flat-square" align="center" />
-</div>  
   
 
 <br/>  
@@ -94,7 +87,7 @@ I'm a passionate software developer with a love for building innovative solution
 
 
 
-## 📈 Activity Graphgg
+## 📈 Activity Graph
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&theme=react-dark&hide_border=true&area=true)
 
 
@@ -104,12 +97,4 @@ I'm a passionate software developer with a love for building innovative solution
 ![Repos Per Language](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Umerjamshaid&theme=dracula) ![Most Commit Language](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Umerjamshaid&theme=dracula)
 
 ![Stats](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Umerjamshaid&theme=dracula) ![Productive Time](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Umerjamshaid&theme=dracula&utcOffset=5)
-Sun Feb 22 09:13:44 UTC 2026
-Mon Feb 23 01:03:50 UTC 2026
-Tue Feb 24 01:02:14 UTC 2026
-Tue Feb 24 01:11:04 UTC 2026
-Wed Feb 25 01:07:42 UTC 2026
-Thu Feb 26 01:01:10 UTC 2026
-Fri Feb 27 01:01:17 UTC 2026
-Sun Mar  1 09:19:02 UTC 2026
-Mon Mar  2 01:02:19 UTC 2026
+
