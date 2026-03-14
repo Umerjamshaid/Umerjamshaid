@@ -22,8 +22,8 @@ jobs:
 
       - name: Commit and Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "umerjamshaid481@gmail.com"
+          git config --local user.name "Umerjamshaid"
           git add CONTRIBUTIONS.md
           git commit -m "chore: daily activity log $(date +'%Y-%m-%d')"
           git push
