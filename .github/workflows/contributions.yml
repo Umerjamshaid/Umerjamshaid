@@ -2,8 +2,11 @@ name: Daily Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'
+    - cron: '0 0 * * *' # Every day at midnight UTC
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   make-contribution:
