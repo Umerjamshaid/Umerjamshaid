@@ -16,7 +16,7 @@ jobs:
           # Your GitHub token
           # Note: It is highly recommended to use a Personal Access Token (PAT) 
           # stored as METRICS_TOKEN in your repository secrets for better performance.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
           user: Umerjamshaid
