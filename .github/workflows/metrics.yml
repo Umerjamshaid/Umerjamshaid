@@ -1,0 +1,240 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  # ──────────────────────────────────────────────
+  # 1. Header + Base Stats
+  # ──────────────────────────────────────────────
+  header:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Karachi
+          filename: github-metrics.svg
+
+  # ──────────────────────────────────────────────
+  # 2. Isometric Commit Calendar (3D)
+  # ──────────────────────────────────────────────
+  isocalendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-isocalendar.svg
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+  # ──────────────────────────────────────────────
+  # 3. Achievements
+  # ──────────────────────────────────────────────
+  achievements:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-achievements.svg
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_threshold: C
+
+  # ──────────────────────────────────────────────
+  # 4. Languages (detailed breakdown)
+  # ──────────────────────────────────────────────
+  languages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-languages.svg
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
+          plugin_languages_sections: most-used
+          plugin_languages_limit: 8
+
+  # ──────────────────────────────────────────────
+  # 5. Coding Habits (wake time / active hours)
+  # ──────────────────────────────────────────────
+  habits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-habits.svg
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_trim: yes
+
+  # ──────────────────────────────────────────────
+  # 6. Notable Contributions
+  # ──────────────────────────────────────────────
+  notable:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-notable.svg
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
+
+  # ──────────────────────────────────────────────
+  # 7. WakaTime (coding stats)
+  # ──────────────────────────────────────────────
+  wakatime:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-wakatime.svg
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 7
+          plugin_wakatime_limit: 5
+          plugin_wakatime_sections: time, projects, languages, editors, os
+          plugin_wakatime_languages_other: yes
+          plugin_wakatime_repositories_visibility: all
+
+  # ──────────────────────────────────────────────
+  # 8. Lines of Code Changed
+  # ──────────────────────────────────────────────
+  lines:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-lines.svg
+          plugin_lines: yes
+          plugin_lines_sections: base, repositories
+          plugin_lines_repositories_limit: 4
+
+  # ──────────────────────────────────────────────
+  # 9. Stars & Stargazers
+  # ──────────────────────────────────────────────
+  stars:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-stargazers.svg
+          plugin_stargazers: yes
+          plugin_stargazers_charts_type: classic
+
+  # ──────────────────────────────────────────────
+  # 10. Follow-up (Issues & PRs status)
+  # ──────────────────────────────────────────────
+  followup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Umerjamshaid
+          template: classic
+          base: ""
+          config_timezone: Asia/Karachi
+          filename: metrics-followup.svg
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_sections: repositories
+
+  # ──────────────────────────────────────────────
+  # 11. Steam (gaming profile)
+  #     Requires STEAM_API_KEY and your Steam ID
+  # ──────────────────────────────────────────────
+  # steam:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: write
+  #   steps:
+  #     - uses: lowlighter/metrics@v3.34
+  #       with:
+  #         token: ${{ secrets.METRICS_TOKEN }}
+  #         user: Umerjamshaid
+  #         template: classic
+  #         base: ""
+  #         filename: metrics-steam.svg
+  #         plugin_steam: yes
+  #         plugin_steam_token: ${{ secrets.STEAM_API_KEY }}
+  #         plugin_steam_user: "YOUR_STEAM_ID"  # ← Replace with your Steam ID
+  #         plugin_steam_sections: player, most-played, recently-played
+  #         plugin_steam_achievements_limit: 2
+  #         plugin_steam_playtime_threshold: 2
+  #         plugin_steam_recent_games_limit: 3
