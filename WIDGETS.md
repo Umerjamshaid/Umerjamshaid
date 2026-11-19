@@ -10,7 +10,9 @@ The README keeps the full widget collection. GitHub cards are grouped into two-c
 4. After the updated workflow is published, open [Metrics in Actions](https://github.com/Umerjamshaid/Umerjamshaid/actions/workflows/metrics.yml) and choose **Run workflow** on `main`.
 5. Check that the jobs succeed. They commit the SVG files directly to `main`; the README then displays them automatically. Scheduled updates run daily at 05:00 Pakistan time.
 
-The workflow checks credentials first, prevents overlapping Metrics runs, and preserves the previous successful image when rendering fails. Generated SVG commits do not trigger another Metrics run.
+The workflow checks credentials first, cancels obsolete runs, and preserves the previous successful image when rendering fails. Generated SVG and README commits do not trigger another Metrics run.
+
+Known upstream issues remain in achievements and coding habits: the original action queries retired Projects Classic fields and expects commit arrays that GitHub no longer includes in push events. Lines of code can also fail on missing contributor authors; its previously generated image remains available. The original generator is retained.
 
 | Card | Generated file |
 | --- | --- |
@@ -31,10 +33,12 @@ Reference: [Metrics setup for the version used by this repository](https://githu
 
 ## WakaTime
 
-1. Copy your API key from [WakaTime account settings](https://wakatime.com/settings/account).
-2. Add it to the same repository's Actions secrets as `WAKATIME_API_KEY`.
+1. Copy your personal OAuth token from [WakaTime OAuth](https://wakatime.com/oauth). Editor API keys are write-only and cannot read stats.
+2. Add it to the same repository's Actions secrets as `WAKATIME_API_KEY`. The secret name is retained for compatibility; its value must be the personal OAuth token.
 3. Install a [WakaTime editor plugin](https://wakatime.com/plugins) and let it record coding activity.
 4. Run Metrics again. The WakaTime job is skipped until its key is configured; it does not stop the other cards from updating. WakaTime uses its own credential and can also run when `METRICS_TOKEN` is absent.
+
+Reference: [current WakaTime authentication requirements](https://wakatime.com/developers#authentication).
 
 ## Spotify
 
