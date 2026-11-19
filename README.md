@@ -91,7 +91,7 @@ Delivered **4+ HTML/CSS client websites** using supplied templates, working dire
 ## 📊 GitHub dashboard
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Umerjamshaid&amp;show_icons=true&amp;theme=dracula&amp;hide_border=true" width="48%" alt="GitHub statistics" />
+  <img src="./github-stats.svg" width="48%" alt="GitHub statistics" />
   <img src="https://streak-stats.demolab.com?user=Umerjamshaid&amp;theme=dracula&amp;hide_border=true" width="48%" alt="Contribution streak" />
 </p>
 
