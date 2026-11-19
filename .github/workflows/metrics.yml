@@ -7,6 +7,7 @@ on:
     branches: ["main"]
     paths:
       - .github/workflows/metrics.yml
+      - .github/actions/metrics-compat/**
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -105,22 +106,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/metrics-compat
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Umerjamshaid
-          template: classic
-          plugins_errors_fatal: yes
-          retries: 1
-          retries_delay: 15
-          retries_delay_output_action: 15
-          committer_branch: main
-          base: ""
-          config_timezone: Asia/Karachi
+          widget: achievements
           filename: metrics-achievements.svg
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: C
 
   # ──────────────────────────────────────────────
   # 4. Languages (detailed breakdown)
@@ -164,25 +157,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/metrics-compat
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Umerjamshaid
-          template: classic
-          plugins_errors_fatal: yes
-          retries: 1
-          retries_delay: 15
-          retries_delay_output_action: 15
-          committer_branch: main
-          base: ""
-          config_timezone: Asia/Karachi
+          widget: habits
           filename: metrics-habits.svg
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_trim: yes
 
   # ──────────────────────────────────────────────
   # 6. Notable Contributions
@@ -241,7 +223,7 @@ jobs:
           plugin_wakatime_days: 7
           plugin_wakatime_limit: 5
           plugin_wakatime_sections: time, projects, languages, editors, os
-          plugin_wakatime_languages_other: yes
+          plugin_wakatime_languages_other: no
           plugin_wakatime_repositories_visibility: all
 
   # ──────────────────────────────────────────────
@@ -255,22 +237,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@v3.34
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/metrics-compat
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          user: Umerjamshaid
-          template: classic
-          plugins_errors_fatal: yes
-          retries: 1
-          retries_delay: 15
-          retries_delay_output_action: 15
-          committer_branch: main
-          base: repositories
-          config_timezone: Asia/Karachi
+          widget: lines
           filename: metrics-lines.svg
-          plugin_lines: yes
-          plugin_lines_sections: base, repositories
-          plugin_lines_repositories_limit: 4
 
   # ──────────────────────────────────────────────
   # 9. Stars & Stargazers

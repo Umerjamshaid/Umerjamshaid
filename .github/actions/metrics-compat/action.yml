@@ -1,0 +1,51 @@
+name: Metrics compatibility fixes
+description: Run the original Metrics image with local GitHub API compatibility patches.
+inputs:
+  token:
+    description: GitHub token for public profile metrics
+    required: true
+  widget:
+    description: Widget to generate (achievements, habits, or lines)
+    required: true
+  filename:
+    description: Generated SVG filename
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v6
+      with:
+        repository: lowlighter/metrics
+        ref: 65836723097537a54cd8eb90f61839426b4266b6
+        path: .metrics-upstream
+        persist-credentials: false
+    - name: Apply local API compatibility fixes
+      shell: bash
+      run: |
+        python3 "$GITHUB_ACTION_PATH/patch.py" "$GITHUB_WORKSPACE/.metrics-upstream"
+        METRICS_SOURCE="$GITHUB_WORKSPACE/.metrics-upstream" node --test "$GITHUB_ACTION_PATH/test.mjs"
+    - uses: ./.metrics-upstream
+      with:
+        token: ${{ inputs.token }}
+        user: ${{ github.repository_owner }}
+        filename: ${{ inputs.filename }}
+        template: classic
+        base: ${{ inputs.widget == 'lines' && 'repositories' || '' }}
+        committer_branch: main
+        config_timezone: Asia/Karachi
+        plugins_errors_fatal: yes
+        retries: 2
+        retries_delay: 15
+        retries_delay_output_action: 15
+        plugin_achievements: ${{ inputs.widget == 'achievements' && 'yes' || 'no' }}
+        plugin_achievements_display: detailed
+        plugin_achievements_threshold: C
+        plugin_habits: ${{ inputs.widget == 'habits' && 'yes' || 'no' }}
+        plugin_habits_from: 200
+        plugin_habits_days: 14
+        plugin_habits_charts: yes
+        plugin_habits_charts_type: classic
+        plugin_habits_trim: yes
+        plugin_lines: ${{ inputs.widget == 'lines' && 'yes' || 'no' }}
+        plugin_lines_sections: base, repositories
+        plugin_lines_repositories_limit: 4
