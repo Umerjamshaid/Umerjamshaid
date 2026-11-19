@@ -5,16 +5,52 @@ on:
   workflow_dispatch:
   push:
     branches: ["main"]
+    paths:
+      - README.md
+      - .github/workflows/metrics.yml
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    permissions: {}
+    outputs:
+      metrics-enabled: ${{ steps.secrets.outputs.metrics }}
+      wakatime-enabled: ${{ steps.secrets.outputs.wakatime }}
+    steps:
+      - name: Check widget credentials
+        id: secrets
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: |
+          if [ -z "$METRICS_TOKEN" ]; then
+            echo "metrics=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Add METRICS_TOKEN to enable GitHub profile metrics. WakaTime can still update independently."
+          else
+            echo "metrics=true" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$WAKATIME_API_KEY" ]; then
+            echo "wakatime=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "wakatime=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Add WAKATIME_API_KEY to enable the WakaTime card. Other widgets will still update."
+          fi
+
   # ──────────────────────────────────────────────
   # 1. Header + Base Stats
   # ──────────────────────────────────────────────
   header:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -23,6 +59,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Karachi
           filename: github-metrics.svg
@@ -31,7 +69,10 @@ jobs:
   # 2. Isometric Commit Calendar (3D)
   # ──────────────────────────────────────────────
   isocalendar:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -40,6 +81,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-isocalendar.svg
@@ -50,7 +93,10 @@ jobs:
   # 3. Achievements
   # ──────────────────────────────────────────────
   achievements:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -59,6 +105,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-achievements.svg
@@ -70,7 +118,10 @@ jobs:
   # 4. Languages (detailed breakdown)
   # ──────────────────────────────────────────────
   languages:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -79,6 +130,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-languages.svg
@@ -93,7 +146,10 @@ jobs:
   # 5. Coding Habits (wake time / active hours)
   # ──────────────────────────────────────────────
   habits:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -102,6 +158,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-habits.svg
@@ -116,7 +174,10 @@ jobs:
   # 6. Notable Contributions
   # ──────────────────────────────────────────────
   notable:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -125,26 +186,33 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-notable.svg
           plugin_notable: yes
-          plugin_notable_from: organization
-          plugin_notable_types: commit
+          plugin_notable_from: all
+          plugin_notable_types: commit, pull_request, issue
 
   # ──────────────────────────────────────────────
   # 7. WakaTime (coding stats)
   # ──────────────────────────────────────────────
   wakatime:
+    if: needs.setup.outputs.wakatime-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: NOT_NEEDED
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-wakatime.svg
@@ -160,7 +228,10 @@ jobs:
   # 8. Lines of Code Changed
   # ──────────────────────────────────────────────
   lines:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -169,7 +240,9 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
-          base: ""
+          plugins_errors_fatal: yes
+          committer_branch: main
+          base: repositories
           config_timezone: Asia/Karachi
           filename: metrics-lines.svg
           plugin_lines: yes
@@ -180,7 +253,10 @@ jobs:
   # 9. Stars & Stargazers
   # ──────────────────────────────────────────────
   stars:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -189,6 +265,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-stargazers.svg
@@ -199,7 +277,10 @@ jobs:
   # 10. Follow-up (Issues & PRs status)
   # ──────────────────────────────────────────────
   followup:
+    if: needs.setup.outputs.metrics-enabled == 'true'
+    needs: setup
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -208,6 +289,8 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Umerjamshaid
           template: classic
+          plugins_errors_fatal: yes
+          committer_branch: main
           base: ""
           config_timezone: Asia/Karachi
           filename: metrics-followup.svg

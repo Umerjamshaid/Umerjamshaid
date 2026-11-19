@@ -1,0 +1,49 @@
+# Profile widget setup
+
+The README keeps the full widget collection. GitHub cards are grouped into two-column rows; the calendar, snake, activity graph, and WakaTime card use the full available width.
+
+## GitHub Metrics
+
+1. [Create a classic GitHub personal access token](https://github.com/settings/tokens/new). Give it a descriptive name and an expiry. Leave scopes unchecked for the public profile data used here.
+2. Open [this repository's Actions secrets](https://github.com/Umerjamshaid/Umerjamshaid/settings/secrets/actions).
+3. Select **New repository secret**, name it `METRICS_TOKEN`, and paste the token as its value. Never put the token in a file or chat.
+4. After the updated workflow is published, open [Metrics in Actions](https://github.com/Umerjamshaid/Umerjamshaid/actions/workflows/metrics.yml) and choose **Run workflow** on `main`.
+5. Check that the jobs succeed. They commit the SVG files directly to `main`; the README then displays them automatically. Scheduled updates run daily at 05:00 Pakistan time.
+
+The workflow checks credentials first, prevents overlapping Metrics runs, and preserves the previous successful image when rendering fails. Generated SVG commits do not trigger another Metrics run.
+
+| Card | Generated file |
+| --- | --- |
+| Profile metrics | `github-metrics.svg` |
+| Isometric calendar | `metrics-isocalendar.svg` |
+| Achievements | `metrics-achievements.svg` |
+| Languages | `metrics-languages.svg` |
+| Coding habits | `metrics-habits.svg` |
+| Notable contributions | `metrics-notable.svg` |
+| Lines of code | `metrics-lines.svg` |
+| Stargazers | `metrics-stargazers.svg` |
+| Issues and pull requests | `metrics-followup.svg` |
+| WakaTime | `metrics-wakatime.svg` |
+
+If cards stop updating, inspect the failed job in Actions and check whether the token has expired. The built-in `GITHUB_TOKEN` is used to publish images; it cannot replace the personal token used to collect profile metrics.
+
+Reference: [Metrics setup for the version used by this repository](https://github.com/lowlighter/metrics/blob/v3.34/.github/readme/partials/documentation/setup/action.md).
+
+## WakaTime
+
+1. Copy your API key from [WakaTime account settings](https://wakatime.com/settings/account).
+2. Add it to the same repository's Actions secrets as `WAKATIME_API_KEY`.
+3. Install a [WakaTime editor plugin](https://wakatime.com/plugins) and let it record coding activity.
+4. Run Metrics again. The WakaTime job is skipped until its key is configured; it does not stop the other cards from updating. WakaTime uses its own credential and can also run when `METRICS_TOKEN` is absent.
+
+## Spotify
+
+If the widget reports an invalid or revoked Spotify access/refresh token, open [Spotify GitHub Profile](https://spotify-github-profile.kittinanx.com/), sign in with the Spotify account used for the widget, and review the requested access. If the service gives you a different embed URL, update the Spotify image in `README.md`.
+
+Reference: [Spotify GitHub Profile](https://github.com/kittinan/spotify-github-profile).
+
+## Contribution snake and hosted cards
+
+The snake already generates successfully on the `output` branch using `.github/workflows/snake.yml`. Keep its raw image URLs pointed at that branch. Metrics images live on `main`, so neither workflow overwrites the other's output.
+
+The typing banner, visitor counter, stats, streak, activity graph, summary cards, and badges use hosted services. They were checked for valid SVG responses during this update; temporary service outages or rate limits can still affect them.

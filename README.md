@@ -1,194 +1,180 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=BD93F9&center=true&vCenter=true&random=false&width=435&lines=Hello%2C+I'm+Umer+Jamshaid!+%F0%9F%91%8B;Software+Developer+%F0%9F%92%BB;Open+Source+Contributor+%F0%9F%8C%8D" alt="Typing SVG" />
-</h1>
+<h1 align="center">Hi, I'm Umer Jamshaid 👋</h1>
 
 <p align="center">
-  <a href="https://linkedin.com/in/umer-jamshaid/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:umerjamshaid481@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
-  <a href="https://stackoverflow.com/users/23545267/umer-jamshaid"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow" /></a>
-  <a href="https://discord.gg/DXwsVcRnFv"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://x.com/Umerjamshaidr"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)" /></a>
-  <a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.shields.io/badge/Buy_Me_A_Sandwich-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=000000" alt="Buy Me A Coffee" /></a>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;pause=1200&amp;color=BD93F9&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Flutter+%26+Dart+Developer;Building+mobile+and+web+experiences;Open+Source+Contributor" alt="Flutter and Dart developer, building mobile and web experiences, open source contributor" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=UMERJAMSHAID&style=flat-square&color=bd93f9" alt="Profile Views" />
+  <strong>Flutter Developer · Mobile &amp; Web Development · Karachi, Pakistan</strong>
 </p>
 
----
+<p align="center">
+  I build cross-platform apps with Flutter, Dart, and Firebase, with experience in Python and responsive websites.
+</p>
 
-## 🧑‍💻 About Me
+<p align="center">
+  <a href="https://umerjamshaid.github.io/Mac_OS_Portfolio/"><img src="https://img.shields.io/badge/Portfolio-BD93F9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit my portfolio" /></a>
+  <a href="https://www.linkedin.com/in/umer-jamshaid/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
+  <a href="mailto:umerjamshaid481@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Umer" /></a>
+</p>
 
-I'm a software developer who loves building things that make a positive impact. I thrive on challenges and enjoy diving deep into complex problems.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Umerjamshaid&amp;style=flat-square&amp;color=bd93f9" alt="Profile views" />
+</p>
 
-- 🔭 Currently working on **Bano-Qabil 2.0** — my Python `FinalProject`
-- 🌱 Currently learning **Python**, **PHP**, and **Flutter/Dart**
-- 💡 Passionate about **Open Source**, **UX Design**, and **Tech Entrepreneurship**
-- 📫 Reach me at **umerjamshaid481@gmail.com**
+## 🧑‍💻 About me
 
----
+I enjoy turning designs into responsive interfaces and connecting them to real data. My work includes e-commerce, real-time messaging, and client websites, from Flutter UI components to authentication and REST API integration.
 
-## 💻 Tech Stack
+- 📱 Built **Baby Shop Hub**, an e-commerce app with authentication, cart and order flows, and an admin dashboard.
+- 💬 Created **Chat Box**, a Firebase-powered messaging app showcased at **Aptech Vision 2025**.
+- 🤝 Worked with UI/UX designers during a Flutter internship and with clients on freelance web projects.
+- 🌱 Interested in open source, thoughtful UX, and building useful products.
+- 💼 Open to **Flutter internships and entry-level developer roles**.
 
-### Languages
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+## 🚀 Featured projects
 
-### Frameworks & Tools
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+### [Baby Shop Hub](https://github.com/Umerjamshaid/baby_shop_hub)
 
-### Learning
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+An e-commerce mobile app for infant and baby products, built with **Flutter, Dart, and Firebase**.
 
----
+- User authentication, cart management, and order flow.
+- Responsive screens with real-time Firebase data.
+- Admin dashboard for product management, analytics, and sales tracking.
 
-## 📊 GitHub Stats
+### Chat Box · Aptech Vision 2025
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Umerjamshaid&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true" height="150" alt="stats graph" />
-  <img src="https://streak-stats.demolab.com?user=Umerjamshaid&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph" />
-</div>
+A real-time chat app built with **Flutter, Dart, Firebase Authentication, and Cloud Firestore**.
 
----
+- Real-time messaging and user presence.
+- Chat interfaces with message bubbles, user status, and timestamps.
+- Built with attention to responsiveness across devices.
 
-## 🏆 Achievements
+### [Task Management](https://github.com/Umerjamshaid/Task_Managment) · In development
 
-<div align="center">
-  <img src="./metrics-achievements.svg" alt="Achievements" />
-</div>
+A freelance Flutter project for tasks, sub-tasks, reminders, and filters. A connection to a companion web app is planned.
 
----
+**More to explore:** [My portfolio](https://umerjamshaid.github.io/Mac_OS_Portfolio/) · [All repositories](https://github.com/Umerjamshaid?tab=repositories)
 
-## 🧊 Isometric Commit Calendar
+## 🛠️ Skills & tools
 
-<div align="center">
-  <img src="./metrics-isocalendar.svg" alt="Isometric Commit Calendar" />
-</div>
+| Area | Technologies & experience |
+| --- | --- |
+| Mobile development | Flutter, Dart, state management, responsive UI |
+| Backend & integration | Firebase, Firebase Authentication, Cloud Firestore, REST APIs |
+| Web development | HTML, CSS, WordPress, Shopify |
+| Python | Python, Django |
+| Development workflow | Git, GitHub, CI/CD, collaboration with UI/UX designers |
 
----
+## 💼 Experience
 
-## 🗣️ Languages (In-Depth)
+**WordPress / Shopify Developer Intern · Innovative Widget**<br>
+January – June 2024 · Karachi
 
-<div align="center">
-  <img src="./metrics-languages.svg" alt="Languages Breakdown" />
-</div>
+Built and maintained responsive client websites, managed product catalogs and inventory, and updated content, plugins, and themes.
 
----
+**Flutter Developer Intern · Utrix Solutions**<br>
+June – September 2023 · Karachi
 
-## ⏰ Coding Habits & Wake Time
+Developed Flutter UI components, integrated REST APIs, and worked with UI/UX designers to improve app interfaces.
 
-<div align="center">
-  <img src="./metrics-habits.svg" alt="Coding Habits" />
-</div>
+**Freelance Web Developer · TJ Solutions**
 
----
+Delivered **4+ HTML/CSS client websites** using supplied templates, working directly with clients on requirements, responsive pages, and basic SEO.
 
-## 📝 Lines of Code
+## 🎓 Education & training
 
-<div align="center">
-  <img src="./metrics-lines.svg" alt="Lines of Code" />
-</div>
+- **Higher Diploma in Software Engineering** — APTECH Computer Education, Karachi.
+- **Python Programming** — Bano Qabil 2.0, four-month course completed in June 2024.
+- **WordPress Compact Course** — APTECH Computer Education.
 
----
+## 📊 GitHub dashboard
 
-## 🌟 Stargazers
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Umerjamshaid&amp;show_icons=true&amp;theme=dracula&amp;hide_border=true" width="48%" alt="GitHub statistics" />
+  <img src="https://streak-stats.demolab.com?user=Umerjamshaid&amp;theme=dracula&amp;hide_border=true" width="48%" alt="Contribution streak" />
+</p>
 
-<div align="center">
-  <img src="./metrics-stargazers.svg" alt="Stargazers" />
-</div>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Umerjamshaid&amp;theme=dracula" width="98%" alt="GitHub contribution summary" />
+</p>
 
----
+### 🧊 Contribution calendar
 
-## 🔄 Follow-up (Issues & PRs)
-
-<div align="center">
-  <img src="./metrics-followup.svg" alt="Follow-up" />
-</div>
-
----
-
-## 👥 Notable Contributions
-
-<div align="center">
-  <img src="./metrics-notable.svg" alt="Notable Contributions" />
-</div>
-
----
-
-## ⌨️ WakaTime Stats
-
-> [!NOTE]
-> Requires a [WakaTime](https://wakatime.com) account and `WAKATIME_API_KEY` secret.
-
-<div align="center">
-  <img src="./metrics-wakatime.svg" alt="WakaTime Stats" />
-</div>
-
----
-
-<!--
-## 🎮 Steam Gaming
-
-> Uncomment the steam job in `.github/workflows/metrics.yml` and add your `STEAM_API_KEY` + Steam ID.
-
-<div align="center">
-  <img src="./metrics-steam.svg" alt="Steam Profile" />
-</div>
-
----
--->
-
-## 🐍 Contribution Snake
+<p align="center">
+  <img src="./metrics-isocalendar.svg" width="98%" alt="Isometric contribution calendar" />
+</p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Umerjamshaid/Umerjamshaid/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Umerjamshaid/Umerjamshaid/blob/output/github-contribution-grid-snake.svg" />
-  <img alt="Snake animation" src="https://github.com/Umerjamshaid/Umerjamshaid/blob/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Umerjamshaid/Umerjamshaid/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Umerjamshaid/Umerjamshaid/output/github-contribution-grid-snake.svg" />
+  <img width="98%" alt="Snake animation following my GitHub contribution grid" src="https://raw.githubusercontent.com/Umerjamshaid/Umerjamshaid/output/github-contribution-grid-snake.svg" />
 </picture>
 
----
+### 🏆 Achievements & contributions
 
-## 📈 Activity Graph
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="./metrics-achievements.svg" width="100%" alt="GitHub achievements" /></td>
+    <td width="50%" valign="top"><img src="./metrics-notable.svg" width="100%" alt="Notable open source contributions" /></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="./metrics-followup.svg" width="100%" alt="Issue and pull request follow-up" /></td>
+    <td width="50%" valign="top"><img src="./metrics-stargazers.svg" width="100%" alt="Repository stargazers" /></td>
+  </tr>
+</table>
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&theme=react-dark&hide_border=true&area=true)
+### 💻 Languages & coding activity
 
----
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="./metrics-languages.svg" width="100%" alt="In-depth language breakdown" /></td>
+    <td width="50%" valign="top"><img src="./metrics-habits.svg" width="100%" alt="Coding habits and active hours in Karachi time" /></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="./metrics-lines.svg" width="100%" alt="Lines of code added and removed" /></td>
+    <td width="50%" valign="top"><img src="./github-metrics.svg" width="100%" alt="GitHub profile metrics" /></td>
+  </tr>
+</table>
 
-## 📊 Profile Summary
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Umerjamshaid&amp;theme=dracula&amp;hide_border=true&amp;area=true" width="98%" alt="GitHub activity graph" />
+</p>
 
-<div align="center">
+### ⌨️ WakaTime
 
-![Profile Details](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Umerjamshaid&theme=dracula)
+<p align="center">
+  <img src="./metrics-wakatime.svg" width="98%" alt="WakaTime coding activity over the last seven days" />
+</p>
 
-![Repos Per Language](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Umerjamshaid&theme=dracula) ![Most Commit Language](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Umerjamshaid&theme=dracula)
+<details>
+<summary>📈 More language & activity charts</summary>
 
-![Stats](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Umerjamshaid&theme=dracula) ![Productive Time](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Umerjamshaid&theme=dracula&utcOffset=5)
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Umerjamshaid&amp;theme=dracula" width="48%" alt="Repositories per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Umerjamshaid&amp;theme=dracula" width="48%" alt="Most committed languages" />
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Umerjamshaid&amp;theme=dracula" width="48%" alt="GitHub profile statistics" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Umerjamshaid&amp;theme=dracula&amp;utcOffset=5" width="48%" alt="Productive hours in Karachi time" />
+</p>
 
-</div>
+</details>
 
----
+### 🎵 Now playing
 
-## 🎵 Now Playing
+<p align="center">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&amp;redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&amp;cover_image=true&amp;theme=default&amp;show_offline=false&amp;background_color=000000&amp;interchange=true&amp;profanity=true&amp;hide_remaster=false&amp;bar_color_cover=true&amp;bar_color=1f6689" alt="Currently playing on Spotify" />
+  </a>
+</p>
 
-<div align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31pp35u7iyrpbyeugtthvchqvfz4&cover_image=true&theme=novatorem&show_offline=true&background_color=000000&interchange=false&bar_color=bd93f9&bar_color_cover=false" alt="Spotify Now Playing" />
-</div>
+Find me on [Stack Overflow](https://stackoverflow.com/users/23545267/umer-jamshaid), [X](https://x.com/Umerjamshaidr), or [Discord](https://discord.gg/DXwsVcRnFv).
 
----
+## 🤝 Let's connect
 
-<div align="center">
+Have a Flutter opportunity or a project to discuss? Reach me at **[umerjamshaid481@gmail.com](mailto:umerjamshaid481@gmail.com)** or connect on **[LinkedIn](https://www.linkedin.com/in/umer-jamshaid/)**.
 
-### 💜 Thanks for visiting!
-
-![GitHub Metrics](./github-metrics.svg)
-
-</div>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/UmerJamshaid"><img src="https://img.shields.io/badge/Buy_Me_A_Sandwich-FFDD00?style=for-the-badge&amp;logo=buy-me-a-coffee&amp;logoColor=000000" alt="Support my work" /></a>
+</p>
