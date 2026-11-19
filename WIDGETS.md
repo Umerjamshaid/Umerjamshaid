@@ -12,7 +12,7 @@ The README keeps the full widget collection. GitHub cards are grouped into two-c
 
 The workflow checks credentials first, cancels obsolete runs, and preserves the previous successful image when rendering fails. Generated SVG and README commits do not trigger another Metrics run.
 
-Known upstream issues remain in achievements and coding habits: the original action queries retired Projects Classic fields and expects commit arrays that GitHub no longer includes in push events. Lines of code can also fail on missing contributor authors; its previously generated image remains available. The original generator is retained.
+Achievements, coding habits, and lines of code run through `.github/actions/metrics-compat`. This applies checked local patches to pinned original Metrics source and mounts only the patched files into the original image, pinned by digest. It replaces Projects Classic with Projects V2, tolerates missing commit details, and correctly filters contributors when an account is missing. The action runs three regression tests before generating cards. No community fork receives credentials.
 
 | Card | Generated file |
 | --- | --- |
@@ -39,6 +39,8 @@ Reference: [Metrics setup for the version used by this repository](https://githu
 4. Run Metrics again. The WakaTime job is skipped until its key is configured; it does not stop the other cards from updating. WakaTime uses its own credential and can also run when `METRICS_TOKEN` is absent.
 
 Reference: [current WakaTime authentication requirements](https://wakatime.com/developers#authentication).
+
+The widget uses WakaTime's standard time totals. The legacy "including other languages" fields are disabled because they produce invalid values with the current API. Zero hours means no coding time is recorded for the displayed period; editor activity will appear after the next scheduled update.
 
 ## Spotify
 
