@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">`UMERJAMSAID`&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 34, Total Commits  (last year) : 492, Total PRs: 34, Total Issues: 5, Contributed to (last year): 3</desc>
+        <desc id="descId">Total Stars Earned: 34, Total Commits  (last year) : 492, Total PRs: 35, Total Issues: 5, Contributed to (last year): 3</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 126.30214695236076;
+        stroke-dashoffset: 125.76222858027563;
       }
     }
   
@@ -199,7 +199,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >34</text>
+      >35</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
